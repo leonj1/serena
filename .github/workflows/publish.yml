@@ -19,7 +19,7 @@ env:
 jobs:
   publish:
     name: Publish the serena-agent package
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64]
 
     permissions:
       id-token: write  # Required for trusted publishing
